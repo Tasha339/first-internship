@@ -62,29 +62,13 @@ public class LinkedList<E> {
             tail = null;
         return temp;
     }
-    //displays the data in the nodes and how they are linked
-    public char display(){
-        if(size == 0)
-            System.out.println("null");
-        else{
-            Node<E> current = head;
-            while(current != null){
-                System.out.print(current.getData() + " ----> ");
-                current = current.getNext();
-            }
-            System.out.print("null");
-        }
-        System.out.println("");
-        return '|';
-    }
 
     //outputs data stored in nested linked lists
     public void show(){
         System.out.println(this);
-
-
     }
 
+    //prints the data stored in a linked list instance
     public String toString(){
         var current = head;
         var sb = new StringBuilder();
