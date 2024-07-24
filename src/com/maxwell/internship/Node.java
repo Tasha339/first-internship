@@ -1,6 +1,5 @@
 package com.maxwell.internship;
 
-//nested node class
 class Node<E> {
     //fields of node class
     private E data;
